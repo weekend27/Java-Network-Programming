@@ -22,7 +22,7 @@ public class JoinDigestUserInterface {
 				result.append(DatatypeConverter.printHexBinary(digest));
 				System.out.println(result);
 			} catch (InterruptedException e) {
-				System.err.println("Thread Interrupted before completion");
+				System.err.println("Thread Interrupted before completion.");
 			}
 		}
 	}
