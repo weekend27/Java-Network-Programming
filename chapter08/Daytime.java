@@ -6,7 +6,7 @@ import java.io.*;
 public class Daytime {
 
   public Date getDateFromNetwork() throws IOException, ParseException {
-    try (Socket socket = new Socket("time.nist.gov", 13)) {
+    try (Socket socket = new Socket("localhost", 13)) {
       socket.setSoTimeout(15000);
       InputStream in = socket.getInputStream();
       StringBuilder time = new StringBuilder();
